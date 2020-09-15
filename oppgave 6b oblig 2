@@ -1,0 +1,25 @@
+public static String tilStreng(int[] tabell) {
+
+		// TODO
+		String[] resultat = new String[tabell.length];
+		String out = "";
+
+		for (int v = 0; v < tabell.length; v++) {
+
+			String str1 = Integer.toString(tabell[v]);
+
+			if (v < tabell.length - 1) {
+
+				resultat[v] = (str1 + ",");
+
+			} else {
+
+				resultat[v] = (str1);
+
+			}
+			out += resultat[v];
+		}
+
+		return "[" + out + "]";
+
+	}
